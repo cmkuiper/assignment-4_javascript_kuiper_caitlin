@@ -48,3 +48,42 @@ var presidents = [
 ];
 
 console.log(presidents[2].firstName + " " + presidents[2].lastName);
+
+//Functions
+
+// Declaration
+function howdy() {
+  console.log('Caitlin Kuiper says hello!');
+}
+
+howdy();
+
+//Expression
+var numba = function( string ) {
+  if (string.length < 7) {
+    console.log( "What a short little word!" );
+  }
+
+  else if (string.length > 7) {
+    console.log( "I'm sorry, but that's too many to count." );
+  }
+
+  else {
+    console.log( "7, what a perfect choice!");
+  }
+};
+
+numba("7");
+numba("seventy");
+numba("university");
+
+//Parameters
+function inception(display, favMovie) {
+  display(favMovie);
+}
+
+inception(display, "Harry Potter");
+
+function display(name) {
+  console.log(name + " is a fantastic movie.")
+};
